@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    font-family: Open Sans;
+    color: white;
+    background-color: black;
+}
+
+button {
+    background-color: red;
+    border: 3px outset;
+    border-top-color: gray;
+    border-left-color: gray;
+    border-right-color: black;
+    border-bottom-color: black;
+}
+
+
+
+h1,
+p {
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+/* header */
+
+header {
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.header-inner {
+    display: flex;
+}
+
+.logoImg {
+    width: 180px;
+    height: 122px;
+    margin-right: 20px;
+}
+
+nav {
+    height: 122px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+/* posters */
+
+.text {
+    margin-left: 270px;
+}
+
+.postersInner {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movie {
+    width: 300px;
+}
+
+
+.poster {
+    width: 300px;
+    transition: transform 3s;
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+}
+
+.miniLogo {
+    width: 73px;
+    height: 43px;
+    float: left;
+    margin-right: 20px;
+}
+
+.textFooter {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+}
+
+.footerP {
+    color: #504D4D;
+    font-weight: 900;
+}
+
+span {
+    color: red;
+    font-size: 28px;
+}
+
+.footerP1 {
+    color: #504D4D;
+}
+
+.main {
+    display: flex;
+    padding: 40px;
+}
+
+.text1 {
+    padding: 10px 40px;
+}
+
+.background_conteiner {
+    position: relative;
+    overflow: hidden;
+    height: 530px;
+}
+
+.date {
+    color: white;
+    font-size: 15px;
+}
+
+main>article>p {
+    position: absolute;
+    top: 200px;
+    max-width: 505px;
+    left: 80px;
+}
+
+.background_text {
+    color: white;
+    font-size: 48px;
+}
+
+main>article>img {
+    width: 100%;
+}
+
+li {
+    padding: 10px;
+    border: 1px dotted white;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px dotted white;
+}
+
+.footer_text {
+    border: 1px solid red;
+    padding: 3px;
+}
+
+.movie:hover {
+    transform: scale(1.1);
+    transition: transform 300ms;
+}
+
+.header-inner>nav>ul>li>a:active {
+    color: red;
+}
+
+.movie>p {
+    position: relative;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.movie>p::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/cinema.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -20px;
+}
